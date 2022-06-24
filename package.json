@@ -1,8 +1,13 @@
 {
   "name": "cn-first-letter",
   "version": "1.0.0",
-  "description": "获取中文字符串首字母,支持多音字模式。Get the first letter of a Chinese string, support polyphonic mode.",
-  "main": "cnFirstLetter.js",
+  "description": "获取中文字符串拼音首字母,支持多音字模式。Get the first letter of pinyin of Chinese string, support polyphonic mode.",
+  "main": "dist/cnFirstLetter.js",
+  "scripts": {
+    "dev": "rollup -c",
+    "dev:watch": "rollup -c --watch",
+    "build": "rollup -c --environment NODE_ENV:production && rollup -c"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DiracKeeko/cn-first-letter.git"
@@ -10,7 +15,7 @@
   "keywords": [
     "拼音",
     "首字母",
-    "pinYin",
+    "pinyin",
     "firstLetter"
   ],
   "author": "DiracKeeko",
@@ -18,5 +23,16 @@
   "bugs": {
     "url": "https://github.com/DiracKeeko/cn-first-letter/issues"
   },
-  "homepage": "https://github.com/DiracKeeko/cn-first-letter#readme"
+  "homepage": "https://github.com/DiracKeeko/cn-first-letter#readme",
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-commonjs": "^21.0.2",
+    "@rollup/plugin-node-resolve": "^13.1.3",
+    "core-js": "^2.6.12",
+    "rollup": "^2.68.0",
+    "rollup-plugin-terser": "^7.0.2"
+  }
 }
