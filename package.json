@@ -1,0 +1,22 @@
+{
+  "name": "cn-first-letter",
+  "version": "1.0.0",
+  "description": "获取中文字符串首字母,支持多音字模式。Get the first letter of a Chinese string, support polyphonic mode.",
+  "main": "cnFirstLetter.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiracKeeko/cn-first-letter.git"
+  },
+  "keywords": [
+    "拼音",
+    "首字母",
+    "pinYin",
+    "firstLetter"
+  ],
+  "author": "DiracKeeko",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/DiracKeeko/cn-first-letter/issues"
+  },
+  "homepage": "https://github.com/DiracKeeko/cn-first-letter#readme"
+}
